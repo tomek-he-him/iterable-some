@@ -1,6 +1,6 @@
 {
   "name": "iterable-some",
-  "version": "0.0.0-work-in-progress",
+  "version": "1.0.0",
   "description": "`Array.some` for iterables.",
   "dependencies": {},
   "scripts": {
