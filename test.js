@@ -7,13 +7,13 @@ test('Works with arrays', ({end, equal}) => {
   equal(
     [0, 0, 1]::some(isTruthy),
     true,
-    'returning `true` when the predicate yields `true` once'
+    'returning `true` when the condition returns `true` once'
   );
 
   equal(
     [false, false, false]::some(isTruthy),
     false,
-    'returning `false` when the predicate never yields `true`'
+    'returning `false` when the condition never returns `true`'
   );
 
   equal(
@@ -21,7 +21,7 @@ test('Works with arrays', ({end, equal}) => {
       return ((this > 0) ? '' : 'ok');
     }),
     true,
-    'returning `true` when the predicate yields a truthy value once'
+    'returning `true` when the condition returns a truthy value once'
   );
 
   equal(
@@ -29,7 +29,7 @@ test('Works with arrays', ({end, equal}) => {
       return ((this > 0) ? '' : 'ok');
     }),
     true,
-    'returning `false` when the predicate only yields falsy values'
+    'returning `false` when the condition only returns falsy values'
   );
 
   equal(
@@ -47,7 +47,7 @@ test('Works with arrays', ({end, equal}) => {
 
   [0, 0, 0, -1]::some(function() {
     if (this === -1) {
-      pass('executing the predicate on every element when no match is found');
+      pass('executing the condition on every element when no match is found');
     }
     return (this > 0);
   });
