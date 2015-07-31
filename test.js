@@ -47,7 +47,9 @@ test('Works with arrays', ({end, equal, fail, pass}) => {
 
   [0, 0, 0, -1]::some(function() {
     if (this === -1) {
-      pass('executing the condition on every element when no match is found');
+      pass(
+        'executing the condition on every element when no match has been found'
+      );
     }
     return (this > 0);
   });
