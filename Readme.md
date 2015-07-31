@@ -103,6 +103,16 @@ import isTruthy from 'this-is-truthy/module';
 
 
 
+<div                                                      id="/huh">&nbsp;</div>
+
+Huh?
+----
+
+If you’re wondering what the `::` thing means, you’d better read [this excellent overview by @jussi-kalliokoski](https://github.com/jussi-kalliokoski/trine/blob/5b735cbfb6b28ae94bac0446d9ecd5ce51fb149b/README.md#why) or have a look at the [function bind syntax proposal](https://github.com/zenparsing/es-function-bind).
+
+
+
+
 <div                                                  id="/license">&nbsp;</div>
 
 License
