@@ -47,7 +47,58 @@ $ npm install iterable-some
 Usage
 -----
 
-*Work in progress…*
+```js
+import some from 'iterable-some/module';
+
+// or:
+const some = require('iterable-some');
+```
+
+These are all `true`:
+
+```js
+[true]::some(function() { return this; });
+
+[false, null, 0, 'truthy']::some(function() { return this; });
+
+new Set([5])
+  ::some(function() { return this > 4; })
+;
+
+new Map([2, 'nope'], [5, 'yup'])
+  ::some(function() { return this === 'yup'; })
+;
+```
+
+– and these are `false`:
+
+```js
+[false, false]::some(function() { return this; });
+
+[]::some(function() { return this; });
+
+new Set([3, 1, 0, 4])
+  ::some(function() { return this > 4; })
+;
+```
+
+`::some()` is lazy – just as `Array.some`. It stops executing the `condition` as soon as it finds one match:
+
+```js
+[0, 1, 'not checked']::some(function() {
+  if (this > 0) return true;
+  if (this === 'not checked') throw 'No worries, this won’t be thrown.'
+});
+```
+
+It works great with **[trine](http://npm.im/trine)**-style libraries:
+
+```js
+import isTruthy from 'this-is-truthy/module';
+
+[null, undefined, 0, NaN]::some(isTruthy);
+//» false
+```
 
 
 
