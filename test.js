@@ -3,7 +3,7 @@ import some from './module';
 const test = require('tape-catch');
 const isTruthy = require('this-is-truthy');
 
-test('Works with arrays', ({end, equal}) => {
+test('Works with arrays', ({end, equal, fail, pass}) => {
   equal(
     [0, 0, 1]::some(isTruthy),
     true,
