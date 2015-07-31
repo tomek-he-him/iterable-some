@@ -1,12 +1,12 @@
 [![Coveralls – test coverage
-](https://img.shields.io/coveralls/tomekwi/<!--name-->.svg?style=flat-square)
-](https://coveralls.io/r/tomekwi/<!--name-->)
+](https://img.shields.io/coveralls/tomekwi/iterable-some.svg?style=flat-square)
+](https://coveralls.io/r/tomekwi/iterable-some)
  [![Travis – build status
-](https://img.shields.io/travis/tomekwi/<!--name-->/master.svg?style=flat-square)
-](https://travis-ci.org/tomekwi/<!--name-->)
+](https://img.shields.io/travis/tomekwi/iterable-some/master.svg?style=flat-square)
+](https://travis-ci.org/tomekwi/iterable-some)
  [![David – status of dependencies
-](https://img.shields.io/david/tomekwi/<!--name-->.svg?style=flat-square)
-](https://david-dm.org/tomekwi/<!--name-->)
+](https://img.shields.io/david/tomekwi/iterable-some.svg?style=flat-square)
+](https://david-dm.org/tomekwi/iterable-some)
  [![Stability: experimental
 ](https://img.shields.io/badge/stability-experimental-yellow.svg?style=flat-square)
 ](https://nodejs.org/api/documentation.html#documentation_stability_index)
@@ -17,15 +17,15 @@
 
 
 
-<!--title-->
-<!--title-underline-->
+::some()
+========
 
-**<!--description-->**
+**`Array.some` for iterables.**
 
 
 **Heads up!** This is totally a work in progress. [Thoughts and ideas][] are very welcome.
 
-[Thoughts and ideas]:  https://github.com/tomekwi/<!--name-->/issues
+[Thoughts and ideas]:  https://github.com/tomekwi/iterable-some/issues
 
 
 
@@ -36,7 +36,7 @@ Installation
 ------------
 
 ```sh
-$ npm install <!--name-->
+$ npm install iterable-some
 ```
 
 
