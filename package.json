@@ -27,7 +27,8 @@
     "opn-cli": "1.0.0",
     "tap-spec": "2.2.2",
     "tape": "4.0.1",
-    "tape-catch": "1.0.4"
+    "tape-catch": "1.0.4",
+    "this-is-truthy": "1.0.1"
   },
   "files": [
     "/*.js",
