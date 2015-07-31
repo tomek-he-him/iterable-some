@@ -39,7 +39,16 @@
     "/License.md"
   ],
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "some",
+    "this",
+    "iterable",
+    "set",
+    "map",
+    "array",
+    "trine",
+    "bind"
+  ],
   "author": "Tomek Wiszniewski <t.wiszniewski@gmail.com>",
   "repository": {
     "type": "git",
