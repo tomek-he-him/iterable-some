@@ -1,6 +1,6 @@
 [![Coveralls – test coverage
 ](https://img.shields.io/coveralls/tomekwi/iterable-some.svg?style=flat-square)
-](https://coveralls.io/r/tomekwi/iterable-some)
+](https://github.com/tomekwi/iterable-some/issues/1)
  [![Travis – build status
 ](https://img.shields.io/travis/tomekwi/iterable-some/master.svg?style=flat-square)
 ](https://travis-ci.org/tomekwi/iterable-some)
