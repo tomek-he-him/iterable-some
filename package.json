@@ -11,12 +11,12 @@
     "prepublish": "npm run --silent clean && npm run transpile",
     "test": "eslint . && npm run test:transpile && node .es5/test.js | tap-spec",
     "test:lite": "babel-node --optional es7.functionBind test.js | tap-spec",
-    "test:transpile": "rm -rf .es5 && babel --optional es7.functionBind test.js module.js module/* --out-dir .es5",
+    "test:transpile": "rm -rf .es5 && babel --loose es6.modules --optional es7.functionBind test.js module.js module/* --out-dir .es5",
     "transpile": "babel --loose es6.modules --optional es7.functionBind module --out-dir .",
     "view-coverage": "echo 'Generating coverage reports...'; npm run coverage >/dev/null && echo '...done.' && opn ./coverage/lcov-report/index.html >/dev/null"
   },
   "devDependencies": {
-    "babel": "5.8.19",
+    "babel": "5.8.20",
     "babel-eslint": "4.0.5",
     "coveralls": "2.11.3",
     "es6-set": "0.1.1",
@@ -27,7 +27,6 @@
     "nodangel": "1.3.8",
     "opn-cli": "1.0.0",
     "tap-spec": "2.2.2",
-    "tape": "4.0.1",
     "tape-catch": "1.0.4",
     "this-is-truthy": "1.0.1"
   },
