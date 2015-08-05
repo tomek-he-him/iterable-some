@@ -52,8 +52,6 @@ const some = require('iterable-some');
 These are all `true`:
 
 ```js
-[true]::some(function() { return this; });
-
 [false, null, 0, 'truthy']::some(function() { return this; });
 
 new Set([5])
@@ -70,7 +68,7 @@ new Map([2, 'nope'], [5, 'yup'])
 ```js
 [false, false]::some(function() { return this; });
 
-[]::some(function() { return this; });
+[]::some(function() { return true; });
 
 new Set([3, 1, 0, 4])
   ::some(function() { return this > 4; })
